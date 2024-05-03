@@ -1,0 +1,310 @@
+:root {
+    --primarycolor: #ebebeb;
+    --secondarycolor: black;
+    --colorone: rgb(169, 255, 255);
+    --colortwo: rgb(255, 130, 155);
+    --colorthree: white;
+    --pading: 25px 120px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+h2 {
+    text-align: left;
+    font-size: 2.5rem;
+
+}
+
+.logo {
+    width: 50px;
+    margin-left: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    background-color: var(--primarycolor);
+    border-bottom: 1px solid var(--secondarycolor);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.ham {
+    width: 30px;
+    display: none;
+    margin-right: 40px;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin-right: 40px;
+
+}
+
+#inponce {
+    background-image: url(./assets/casanegro..jpg);
+    background-size: cover;
+    height: 1100px;
+    font-size: 4rem;
+    color: var(--colorthree);
+    text-align: center;
+    padding: var(--pading);
+
+
+
+}
+
+#conocenos {
+    border-top: 1px solid var(--secondarycolor);
+    border-bottom: 1px solid var(--secondarycolor);
+    padding: 100px 120px;
+    background-color: var(--primarycolor);
+}
+
+
+.flex-texto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+}
+
+.fotolocalizacion {
+    background-color: var(--colorone);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.textodiv {
+    background-color: var(--colortwo);
+    padding: 360px 120px;
+    color: var(--colorthree);
+    text-align: center;
+
+}
+
+.textodiv h3 {
+    font-size: 50px;
+}
+
+.textodiv p {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.boton {
+    border: 2px solid var(--colorthree);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+
+
+
+
+#casas {
+
+    text-align: center;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 90px 30px;
+    margin-left: 50px;
+}
+
+.tituloCasas {
+    margin-left: 20px;
+}
+
+.grid-container div {
+    display: flex;
+    height: 397px;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--secondarycolor);
+    font-size: 50px;
+    border-radius: 10px;
+    width: 90%;
+
+}
+
+.grid-container div:hover {
+    background-color: var(--primarycolor);
+}
+
+.grid-container img {
+    width: 90%;
+    height: 400px;
+    box-shadow: 0 0 20px var(--secondarycolor);
+    transition: transform 0.5s;
+    border-radius: 10px;
+}
+
+.grid-container img:hover {
+    transform: scale(1.1);
+}
+
+
+
+#redes {
+    padding: var(--pading);
+
+}
+
+
+
+.card {
+    display: flex;
+    align-items: center;
+
+    border: 1px solid var(--secondarycolor);
+    border-radius: 10px;
+    padding: 15px 30px;
+    width: 80%;
+
+
+}
+
+.hover:hover {
+    background-color: var(--primarycolor);
+}
+
+
+
+#redes img {
+
+    width: 100px;
+    height: auto;
+    margin-right: 50px;
+
+}
+
+
+.flex-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 200px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primarycolor);
+    color: var(--secondarycolor);
+    padding: 15px 40px;
+    border-top: 1px solid var(--secondarycolor);
+    margin-top: 100px;
+
+
+}
+
+footer img {
+    width: 50px;
+
+}
+
+@media (max-width: 1024px) {
+
+
+    nav {
+        display: none;
+    }
+
+    .ham {
+        display: block;
+    }
+
+    h1 {
+        color: var(--primarycolor);
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 3rem;
+        color: var(--primarycolor);
+    }
+
+    #inponce {
+        padding: 25px 10px;
+    }
+
+    .flex-texto {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .flex-imagenes {
+
+
+        grid-template-columns: 1fr;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+
+
+    }
+
+    #redes {
+        padding: 20px;
+    }
+
+    .card {
+        width: 80%;
+        font-size: 14px;
+
+    }
+
+    footer {
+        padding: 20px;
+        width: 100%;
+
+    }
+
+
+
+}
